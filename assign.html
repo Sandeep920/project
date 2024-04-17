@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .img img {
+            width: 200px;
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="img">
+            <img src="/realistic-light-bulb-design-concept-shape-heart-gray-isolated_1284-49292-removebg-preview.png"
+                alt="" id="img1">
+
+
+            <img src=" /realistic-illuminated-electric-3d-bulb_1284-50445-removebg-preview.png
+            " alt="" id="img2" style="display: none;">
+
+        </div>
+
+
+    </div>
+
+
+    <div class="btn">
+        <button onclick="bulb()">on/off</button>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+
+        function bulb() {
+            let img1 = document.getElementById("img1");
+            let img2 = document.getElementById("img2");
+
+
+            if (img1.style.display != "none"){
+                img1.style.display = "none";
+                img2.style.display = "block";
+
+            }else{
+                img1.style.display = "block";
+                img2.style.display = "none";
+                
+            }
+}
+
+
+    </script>
+
+
+</body>
+
+</html>
